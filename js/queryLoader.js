@@ -134,7 +134,7 @@ var QueryLoader = {
 	
 	animateLoader: function() {
 		var perc = (100 / QueryLoader.doneStatus) * QueryLoader.doneNow;
-		if (perc > 99) {
+		if (perc > 90.0) {
 			$(QueryLoader.loadBar).stop().animate({
 				width: perc + "%"
 			}, 500, "linear", function() { 
